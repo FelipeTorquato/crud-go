@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="969f8545-cea6-4113-bf1a-d0824df0e8b3" name="Changes" comment="" />
+    <list default="true" id="969f8545-cea6-4113-bf1a-d0824df0e8b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/crud-go.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init_dependencies.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/configuration/database/mongodb/mongodb_connection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/configuration/logger/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/configuration/rest_err/rest.err.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/configuration/validation/validate_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/create_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/delete_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/find_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/model/request/user_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/model/response/user_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/routes/routes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/update_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/user_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/repository/create_user_repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/repository/entity/converter/convert_domain_to_entity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/repository/entity/converter/convert_entity_to_domain.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/repository/entity/user_entity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/repository/user_repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/service/create_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/service/delete_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/service/find_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/service/update_user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/service/user_interface.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/user_domain.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/user_domain_interface.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/user_domain_password.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/convert_domain_to_response.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +53,9 @@
     </option>
   </component>
   <component name="GOROOT" url="file:///snap/go/current" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -38,6 +76,7 @@
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "last_opened_file_path": "/home/felipetorquato",
     "node.js.detected.package.eslint": "true",
