@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="969f8545-cea6-4113-bf1a-d0824df0e8b3" name="Changes" comment="" />
+    <list default="true" id="969f8545-cea6-4113-bf1a-d0824df0e8b3" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/create_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/create_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/delete_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/delete_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/find_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/find_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/model/request/user_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/model/request/user_request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/routes/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/routes/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/update_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/update_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/repository/create_user_repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/repository/create_user_repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/repository/entity/user_entity.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/repository/entity/user_entity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/repository/user_repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/repository/user_repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/service/create_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/service/create_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/service/delete_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/service/delete_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/service/find_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/service/find_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/service/update_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/service/update_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/service/user_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/service/user_interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/user_domain_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/user_domain_interface.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +40,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;FelipeTorquato&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/FelipeTorquato/crud-go&quot;,
+    &quot;accountId&quot;: &quot;e1bcda3a-7bd6-40d5-80f6-b78bf9729e7d&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -32,24 +63,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go Build.go build crud.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build main.go.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/felipetorquato&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;go.sdk&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build crud.executor": "Debug",
+    "Go Build.go build main.go.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/home/felipetorquato",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "go.sdk"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/model/service" />
@@ -94,18 +125,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/model/repository/create_user_repository.go</url>
-          <line>38</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
