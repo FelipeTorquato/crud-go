@@ -1,5 +1,7 @@
 package model
 
+import "crud/src/configuration/rest_err"
+
 type UserDomainInterface interface {
 	GetEmail() string
 	GetPassword() string
@@ -11,6 +13,7 @@ type UserDomainInterface interface {
 
 	GetJSONValue() (string, error)
 	EncryptPassword()
+	GenerateToken() (string, *rest_err.RestErr)
 }
 
 func NewUserDomain(
@@ -22,6 +25,15 @@ func NewUserDomain(
 		password: password,
 		name:     name,
 		age:      age,
+	}
+}
+
+func NewUserLoginDomain(
+	email, password string,
+) UserDomainInterface {
+	return &userDomain{
+		email:    email,
+		password: password,
 	}
 }
 
