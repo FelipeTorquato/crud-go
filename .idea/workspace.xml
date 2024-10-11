@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="969f8545-cea6-4113-bf1a-d0824df0e8b3" name="Changes" comment="change go.mod" />
+    <list default="true" id="969f8545-cea6-4113-bf1a-d0824df0e8b3" name="Changes" comment="create user and find user tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +49,11 @@
     "DefaultGoTemplateProperty": "Go File",
     "Go Build.go build crud.executor": "Run",
     "Go Build.go build main.go.executor": "Run",
+    "Go Test.TestUserRepository_CreateUser in crud/src/model/repository.executor": "Coverage",
+    "Go Test.TestUserRepository_FindUserByEmail in crud/src/model/repository.executor": "Coverage",
+    "Go Test.TestUserRepository_FindUserByEmailAndPassword in crud/src/model/repository.executor": "Coverage",
+    "Go Test.TestUserRepository_FindUserByID in crud/src/model/repository.executor": "Coverage",
+    "Go Test.go test crud/src/model/repository.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
@@ -69,28 +74,73 @@
       <recent name="$PROJECT_DIR$/main" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build crud">
-    <configuration name="go build crud" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.go test crud/src/model/repository">
+    <configuration name="TestUserRepository_CreateUser in crud/src/model/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="crud-go" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/src/model/repository" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="crud" />
+      <package value="crud/src/model/repository" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUserRepository_CreateUser\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserRepository_FindUserByEmail in crud/src/model/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="crud-go" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
+      <working_directory value="$PROJECT_DIR$/src/model/repository" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="crud/src/model/repository" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUserRepository_FindUserByEmail\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUserRepository_FindUserByEmailAndPassword in crud/src/model/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="crud-go" />
+      <working_directory value="$PROJECT_DIR$/src/model/repository" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="crud/src/model/repository" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUserRepository_FindUserByEmailAndPassword\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUserRepository_FindUserByID in crud/src/model/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="crud-go" />
+      <working_directory value="$PROJECT_DIR$/src/model/repository" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="crud/src/model/repository" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUserRepository_FindUserByID\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test crud/src/model/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="crud-go" />
+      <working_directory value="$PROJECT_DIR$/src/model/repository" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="crud/src/model/repository" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build crud" />
-        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Test.go test crud/src/model/repository" />
+        <item itemvalue="Go Test.TestUserRepository_FindUserByEmailAndPassword in crud/src/model/repository" />
+        <item itemvalue="Go Test.TestUserRepository_FindUserByEmail in crud/src/model/repository" />
+        <item itemvalue="Go Test.TestUserRepository_FindUserByID in crud/src/model/repository" />
+        <item itemvalue="Go Test.TestUserRepository_CreateUser in crud/src/model/repository" />
       </list>
     </recent_temporary>
   </component>
@@ -111,9 +161,16 @@
     <MESSAGE value="jwt" />
     <MESSAGE value="middleware jwt" />
     <MESSAGE value="change go.mod" />
-    <option name="LAST_COMMIT_MESSAGE" value="change go.mod" />
+    <MESSAGE value="create user and find user tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="create user and find user tests" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_FindUserByID_in_crud_src_model_repository.out" NAME="TestUserRepository_FindUserByID in crud/src/model/repository Coverage Results" MODIFIED="1728571979116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_FindUserByEmailAndPassword_in_crud_src_model_repository.out" NAME="TestUserRepository_FindUserByEmailAndPassword in crud/src/model/repository Coverage Results" MODIFIED="1728572111564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_FindUserByEmail_in_crud_src_model_repository.out" NAME="TestUserRepository_FindUserByEmail in crud/src/model/repository Coverage Results" MODIFIED="1728571985337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_CreateUser_in_crud_src_model_repository.out" NAME="TestUserRepository_CreateUser in crud/src/model/repository Coverage Results" MODIFIED="1728570296477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

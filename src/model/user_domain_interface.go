@@ -11,7 +11,6 @@ type UserDomainInterface interface {
 
 	SetID(string)
 
-	GetJSONValue() (string, error)
 	EncryptPassword()
 	GenerateToken() (string, *rest_err.RestErr)
 }
