@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="969f8545-cea6-4113-bf1a-d0824df0e8b3" name="Changes" comment="create user and find user tests" />
+    <list default="true" id="969f8545-cea6-4113-bf1a-d0824df0e8b3" name="Changes" comment="delete and update repository tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/service/create_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/service/create_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/service/user_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/service/user_interface.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,11 +55,31 @@
     "DefaultGoTemplateProperty": "Go File",
     "Go Build.go build crud.executor": "Run",
     "Go Build.go build main.go.executor": "Run",
+    "Go Test.TestUserDomainService_CreateUserServices/when_user_already_exists_returns_error in crud/src/model/service.executor": "Coverage",
+    "Go Test.TestUserDomainService_CreateUserServices/when_user_is_not_registered_returns_error in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_CreateUserServices/when_user_is_not_registered_returns_success in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_DeleteUser in crud/src/model/service.executor": "Coverage",
+    "Go Test.TestUserDomainService_DeleteUser/when_sending_an_invalid_userId_returns_error in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_FindUserByEmailAndPasswordServices in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_FindUserByEmailServices/when_does_not_exists_an_user_returns_error in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_FindUserByEmailServices/when_exists_an_user_returns_success in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_FindUserByIDServices/when_does_not_exists_an_user_returns_error in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_FindUserByIDServices/when_exists_an_user_returns_success in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_LoginUserServices/#00 in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_LoginUserServices/when_calling_create_token_returns_error in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_LoginUserServices/when_calling_repository_returns_error in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_UpdateUser in crud/src/model/service.executor": "Coverage",
+    "Go Test.TestUserDomainService_UpdateUser/when_sending_a_valid_user_and_userId_returns_success in crud/src/model/service.executor": "Run",
+    "Go Test.TestUserDomainService_UpdateUser/when_sending_an_invalid_user_and_userId_returns_error in crud/src/model/service.executor": "Run",
     "Go Test.TestUserRepository_CreateUser in crud/src/model/repository.executor": "Coverage",
+    "Go Test.TestUserRepository_DeleteUser in crud/src/model/repository.executor": "Coverage",
     "Go Test.TestUserRepository_FindUserByEmail in crud/src/model/repository.executor": "Coverage",
     "Go Test.TestUserRepository_FindUserByEmailAndPassword in crud/src/model/repository.executor": "Coverage",
     "Go Test.TestUserRepository_FindUserByID in crud/src/model/repository.executor": "Coverage",
-    "Go Test.go test crud/src/model/repository.executor": "Run",
+    "Go Test.TestUserRepository_UpdateUser in crud/src/model/repository.executor": "Coverage",
+    "Go Test.find_user_repository_test.go.executor": "Coverage",
+    "Go Test.go test crud/src/model/repository.executor": "Debug",
+    "Go Test.go test crud/src/model/service.executor": "Coverage",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
@@ -74,61 +100,61 @@
       <recent name="$PROJECT_DIR$/main" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.go test crud/src/model/repository">
-    <configuration name="TestUserRepository_CreateUser in crud/src/model/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestUserDomainService_LoginUserServices in crud/src/model/service">
+    <configuration name="TestUserDomainService_LoginUserServices in crud/src/model/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="crud-go" />
-      <working_directory value="$PROJECT_DIR$/src/model/repository" />
+      <working_directory value="$PROJECT_DIR$/src/model/service" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="crud/src/model/repository" />
+      <package value="crud/src/model/service" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestUserRepository_CreateUser\E$" />
+      <pattern value="^\QTestUserDomainService_LoginUserServices\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestUserRepository_FindUserByEmail in crud/src/model/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserDomainService_LoginUserServices/when_calling_create_token_returns_error in crud/src/model/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="crud-go" />
-      <working_directory value="$PROJECT_DIR$/src/model/repository" />
+      <working_directory value="$PROJECT_DIR$/src/model/service" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="crud/src/model/repository" />
+      <package value="crud/src/model/service" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestUserRepository_FindUserByEmail\E$" />
+      <pattern value="^\QTestUserDomainService_LoginUserServices\E$/^\Qwhen_calling_create_token_returns_error\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestUserRepository_FindUserByEmailAndPassword in crud/src/model/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserDomainService_LoginUserServices/when_calling_repository_returns_error in crud/src/model/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="crud-go" />
-      <working_directory value="$PROJECT_DIR$/src/model/repository" />
+      <working_directory value="$PROJECT_DIR$/src/model/service" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="crud/src/model/repository" />
+      <package value="crud/src/model/service" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestUserRepository_FindUserByEmailAndPassword\E$" />
+      <pattern value="^\QTestUserDomainService_LoginUserServices\E$/^\Qwhen_calling_repository_returns_error\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestUserRepository_FindUserByID in crud/src/model/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserDomainService_LoginUserServices/when_user_and_password_is_valid_return_success in crud/src/model/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="crud-go" />
-      <working_directory value="$PROJECT_DIR$/src/model/repository" />
+      <working_directory value="$PROJECT_DIR$/src/model/service" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="crud/src/model/repository" />
+      <package value="crud/src/model/service" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestUserRepository_FindUserByID\E$" />
+      <pattern value="^\QTestUserDomainService_LoginUserServices\E$/^\Qwhen_user_and_password_is_valid_return_success\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test crud/src/model/repository" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go test crud/src/model/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="crud-go" />
-      <working_directory value="$PROJECT_DIR$/src/model/repository" />
+      <working_directory value="$PROJECT_DIR$/src/model/service" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="crud/src/model/repository" />
+      <package value="crud/src/model/service" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -136,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.go test crud/src/model/repository" />
-        <item itemvalue="Go Test.TestUserRepository_FindUserByEmailAndPassword in crud/src/model/repository" />
-        <item itemvalue="Go Test.TestUserRepository_FindUserByEmail in crud/src/model/repository" />
-        <item itemvalue="Go Test.TestUserRepository_FindUserByID in crud/src/model/repository" />
-        <item itemvalue="Go Test.TestUserRepository_CreateUser in crud/src/model/repository" />
+        <item itemvalue="Go Test.TestUserDomainService_LoginUserServices in crud/src/model/service" />
+        <item itemvalue="Go Test.TestUserDomainService_LoginUserServices/when_user_and_password_is_valid_return_success in crud/src/model/service" />
+        <item itemvalue="Go Test.go test crud/src/model/service" />
+        <item itemvalue="Go Test.TestUserDomainService_LoginUserServices/when_calling_create_token_returns_error in crud/src/model/service" />
+        <item itemvalue="Go Test.TestUserDomainService_LoginUserServices/when_calling_repository_returns_error in crud/src/model/service" />
       </list>
     </recent_temporary>
   </component>
@@ -162,15 +188,25 @@
     <MESSAGE value="middleware jwt" />
     <MESSAGE value="change go.mod" />
     <MESSAGE value="create user and find user tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="create user and find user tests" />
+    <MESSAGE value="delete and update repository tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete and update repository tests" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_FindUserByID_in_crud_src_model_repository.out" NAME="TestUserRepository_FindUserByID in crud/src/model/repository Coverage Results" MODIFIED="1728571979116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$TestUserDomainService_UpdateUser_in_crud_src_model_service.out" NAME="TestUserDomainService_UpdateUser in crud/src/model/service Coverage Results" MODIFIED="1728906558713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_FindUserByEmailAndPassword_in_crud_src_model_repository.out" NAME="TestUserRepository_FindUserByEmailAndPassword in crud/src/model/repository Coverage Results" MODIFIED="1728572111564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$go_test_crud_src_model_repository.out" NAME="go test crud/src/model/repository Coverage Results" MODIFIED="1728648906747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_FindUserByEmail_in_crud_src_model_repository.out" NAME="TestUserRepository_FindUserByEmail in crud/src/model/repository Coverage Results" MODIFIED="1728571985337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_CreateUser_in_crud_src_model_repository.out" NAME="TestUserRepository_CreateUser in crud/src/model/repository Coverage Results" MODIFIED="1728570296477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$TestUserDomainService_DeleteUser_in_crud_src_model_service.out" NAME="TestUserDomainService_DeleteUser in crud/src/model/service Coverage Results" MODIFIED="1728906795176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$TestUserDomainService_LoginUserServices_when_calling_repository_returns_error_in_crud_src_model_service.out" NAME="TestUserDomainService_LoginUserServices/when_calling_repository_returns_error in crud/src/model/service Coverage Results" MODIFIED="1728907455199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$find_user_repository_test_go.out" NAME="find_user_repository_test.go Coverage Results" MODIFIED="1728648245023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_FindUserByID_in_crud_src_model_repository.out" NAME="TestUserRepository_FindUserByID in crud/src/model/repository Coverage Results" MODIFIED="1728571979116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$go_test_crud_src_model_service.out" NAME="go test crud/src/model/service Coverage Results" MODIFIED="1728908475540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$TestUserDomainService_CreateUserServices_when_user_already_exists_returns_error_in_crud_src_model_service.out" NAME="TestUserDomainService_CreateUserServices/when_user_already_exists_returns_error in crud/src/model/service Coverage Results" MODIFIED="1728654331975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_DeleteUser_in_crud_src_model_repository.out" NAME="TestUserRepository_DeleteUser in crud/src/model/repository Coverage Results" MODIFIED="1728647954514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_CreateUser_in_crud_src_model_repository.out" NAME="TestUserRepository_CreateUser in crud/src/model/repository Coverage Results" MODIFIED="1728648233603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/crud_go$TestUserRepository_UpdateUser_in_crud_src_model_repository.out" NAME="TestUserRepository_UpdateUser in crud/src/model/repository Coverage Results" MODIFIED="1728648335502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

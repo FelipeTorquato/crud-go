@@ -15,7 +15,7 @@ func (ud *userDomainService) CreateUserServices(
 	user, _ := ud.FindUserByEmailServices(userDomain.GetEmail())
 
 	if user != nil {
-		return nil, rest_err.NewBadRequestError("Email already exists")
+		return nil, rest_err.NewBadRequestError("Email is already registered in another account")
 	}
 
 	userDomain.EncryptPassword()
