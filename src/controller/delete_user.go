@@ -11,13 +11,14 @@ import (
 
 func (uc *userControllerInterface) DeleteUser(c *gin.Context) {
 	logger.Info("Init deleteUser controller",
-		zap.String("journey", "createUser"),
+		zap.String("journey", "deleteUser"),
 	)
 
 	userId := c.Param("userId")
 	if _, err := primitive.ObjectIDFromHex(userId); err != nil {
 		errRest := rest_err.NewBadRequestError("Invalid userId, must be a hex value")
 		c.JSON(errRest.Code, errRest)
+		return
 	}
 
 	err := uc.service.DeleteUser(userId)

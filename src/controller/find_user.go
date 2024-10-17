@@ -3,9 +3,7 @@ package controller
 import (
 	"crud/src/configuration/logger"
 	"crud/src/configuration/rest_err"
-	"crud/src/model"
 	"crud/src/view"
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.uber.org/zap"
@@ -17,15 +15,6 @@ func (uc *userControllerInterface) FindUserByID(c *gin.Context) {
 	logger.Info("Init findUserByID controller",
 		zap.String("journey", "findUserByID"),
 	)
-
-	user, err := model.VerifyToken(c.Request.Header.Get("Authorization"))
-
-	if err != nil {
-		c.JSON(err.Code, err)
-		return
-	}
-
-	logger.Info(fmt.Sprintf("User authenticated: %#v", user))
 
 	userId := c.Param("userId")
 	if _, err := primitive.ObjectIDFromHex(userId); err != nil {
@@ -59,15 +48,6 @@ func (uc *userControllerInterface) FindUserByEmail(c *gin.Context) {
 	logger.Info("Init findUserByEmail controller",
 		zap.String("journey", "FindUserByEmail"),
 	)
-
-	user, err := model.VerifyToken(c.Request.Header.Get("Authorization"))
-
-	if err != nil {
-		c.JSON(err.Code, err)
-		return
-	}
-
-	logger.Info(fmt.Sprintf("User authenticated: %#v", user))
 
 	userEmail := c.Param("userEmail")
 	if _, err := mail.ParseAddress(userEmail); err != nil {
